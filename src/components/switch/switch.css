@@ -1,0 +1,450 @@
+@font-face {
+  font-family: 'Inter', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+}
+
+/* General Start */
+.backgroundDark {
+  background-color: hsl(232, 19%, 15%);
+  height: 250px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.backgroundLight {
+  background-color: hsl(225, 100%, 98%);
+  height: 250px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.dashBoard {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
+/* General End */
+
+/* Top Section Start */
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.titleDark {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.titleLight {
+  color: hsl(230, 17%, 14%);
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.totalFollowersDark {
+  color: hsl(228, 34%, 66%);
+  font-size: 14px;
+  margin-top: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.totalFollowersLight {
+  color: hsl(228, 12%, 44%);
+  font-size: 14px;
+  margin-top: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.toggleSection {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modeTxtDark {
+  color: hsl(228, 34%, 66%);
+  padding-top: 0.8rem;
+  padding-right: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.modeTxtLight {
+  color: hsl(228, 12%, 44%);
+  padding-top: 0.8rem;
+  padding-right: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+/* Top Section End */
+
+/* Toggle Switch Start */
+.react-switch-checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.react-switch-label {
+  margin-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 45px;
+  height: 23px;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  border-radius: 100px;
+  position: relative;
+  transition: background-color 0.2s;
+}
+
+.react-switch-label .react-switch-button {
+  content: "";
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: hsl(230, 17%, 14%);
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+
+.react-switch-checkbox:checked + .react-switch-label .react-switch-button {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+
+.react-switch-label:active .react-switch-button {
+  width: 25px;
+}
+/* Toggle Switch End */
+
+/* Top Cards Start */
+.mainCardRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainCardDark {
+  border-width: 0;
+  width: 100%;
+  background-color: hsl(228, 28%, 20%);
+}
+
+.mainCardDark:hover {
+  background-color: hsl(229, 26%, 45%);
+}
+
+.mainCardLight {
+  border-width: 0;
+  width: 100%;
+  background-color: hsl(227, 47%, 96%);
+}
+
+.mainCardLight:hover {
+  background-color: hsl(227, 100%, 94%);
+}
+
+.facebookHeader {
+  background-color: hsl(208, 92%, 53%);
+  padding: 0.1rem;
+}
+
+.twitterHeader {
+  background-color: hsl(203, 89%, 53%);
+  padding: 0.1rem;
+}
+
+.instagramHeader {
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  padding: 0.1rem;
+}
+
+.youtubeHeader {
+  background-color: hsl(348, 97%, 39%);
+  padding: 0.1rem;
+}
+
+.handleCol {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.logo {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.handleDark {
+  font-size: 14px;
+  padding-left: 0.5rem;
+  color: hsl(228, 34%, 66%);
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.handleLight {
+  font-size: 14px;
+  padding-left: 0.5rem;
+  color: hsl(228, 12%, 44%);
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.mainContainer {
+  background-color: hsl(228, 28%, 20%);
+  margin-top: 0.2rem;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.statsDark {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 4rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.statsLight {
+  text-align: center;
+  color: hsl(230, 17%, 14%);
+  font-size: 4rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.statNameDark {
+  text-align: center;
+  color: hsl(228, 34%, 66%);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+.statNameLight {
+  text-align: center;
+  color: hsl(228, 12%, 44%);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.3rem;
+}
+
+.updateDivPos {
+  display: flex;
+  justify-content: center;
+  color: hsl(163, 72%, 41%);
+  padding-top: 1rem;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.updateDivNeg {
+  display: flex;
+  justify-content: center;
+  color: hsl(356, 69%, 56%);
+  padding-top: 1rem;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.arrowIcon {
+  margin-top: 0.4rem;
+  margin-right: 0.2rem;
+  width: 0.5rem;
+  height: 0.3rem;
+}
+/* Top Cards End */
+
+/* Overview Start */
+.overviewTitleDark {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewTitleLight {
+  font-size: 2rem;
+  color: hsl(230, 17%, 14%);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewRow {
+  padding-bottom: 2rem;
+}
+
+.overviewDivDark {
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+}
+
+.overviewDivDark:hover {
+  background-color: hsl(229, 26%, 45%);
+}
+
+.overviewDivLight {
+  background-color: hsl(227, 47%, 96%);
+  border-radius: 5px;
+  color: hsl(230, 17%, 14%);
+}
+
+.overviewDivLight:hover {
+  background-color: hsl(227, 100%, 94%);
+}
+
+.overviewTopRow {
+  padding-top: 2rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 94%;
+}
+
+.overviewTopCol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overviewDivTitleDark {
+  color: hsl(228, 34%, 66%);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewDivTitleLight {
+  color: hsl(228, 12%, 44%);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewLogo {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.overviewBottomRow {
+  margin-left: 3%;
+  margin-right: 3%;
+  width: 94%;
+}
+
+.overviewBottomCol {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overviewTxt {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewUpdateDivPos {
+  padding-top: 1rem;
+  display: flex;
+  color: hsl(163, 72%, 41%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewUpdateDivNeg {
+  padding-top: 1rem;
+  display: flex;
+  color: hsl(356, 69%, 56%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.overviewArrowIcon {
+  margin-top: 0.6rem;
+  margin-right: 0.2rem;
+  width: 0.5rem;
+  height: 0.3rem;
+}
+/* Overview End */
+
+@media screen and (max-width: 376px) {
+  .dashBoard {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
+
+  .topSection {
+    padding-bottom: 0.5rem;
+  }
+
+  .titleCol {
+    border-bottom: 0.1rem solid hsl(228, 28%, 20%);
+  }
+
+  .titleDark {
+    font-size: 1.25rem;
+  }
+  
+  .titleLight {
+    font-size: 1.25rem;
+  }
+
+  .totalFollowersDark {
+    font-size: 12px;
+  }
+  
+  .totalFollowersLight {
+    font-size: 12px;
+  }
+
+  .toggleSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modeTxtDark {
+    font-size: 14px;
+    padding-top: 1.5rem;
+  }
+  
+  .modeTxtLight {
+    font-size: 14px;
+    padding-top: 1.5rem;
+  }
+
+  .cardSpace {
+    padding-top: 1rem;
+  }
+
+  .overviewRow {
+    padding-bottom: 0rem;
+  }
+
+  .overviewSpacing {
+    padding-bottom: 1rem;
+  }
+}
